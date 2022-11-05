@@ -118,6 +118,7 @@ Main content
 #centered_slogan span {
     background-image: linear-gradient(45deg, #3333ff, #ff6666);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: min(204px, 10vh);
 }
