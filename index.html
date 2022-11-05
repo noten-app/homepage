@@ -13,15 +13,23 @@
 
 <body>
     <nav>
-        <div class="nav_section" id="nav_left_section">
-            <div class="nav_left_section" id="nav_logo_section"></div>
-            <div class="nav_left_section" id="nav_title_section">Noten-App</div>
-        </div>
-        <div class="nav_section" id="nav_right_section">
-            <div class="nav_right_section" id="nav_help_button">Hilfe</div>
-            <div class="nav_right_section" id="nav_info_button">Info</div>
-            <div class="nav_right_section" id="nav_download_button"><i class="fa-solid fa-download"></i></div>
-        </div>
+        <ul>
+            <li class="nav_float_left">
+                <div id="notenapp-logo"></div>
+            </li>
+            <li class="nav_float_left">
+                <a class="no_action">Noten-App</a>
+            </li>
+            <li class="nav_float_right">
+                <a href="#about"><i class="fa-solid fa-download"></i></a>
+            </li>
+            <li class="nav_float_right">
+                <a href="#about">Info</a>
+            </li>
+            <li class="nav_float_right">
+                <a class="active-nav" href="#about">Hilfe</a>
+            </li>
+        </ul>
     </nav>
     <script src="script.js"></script>
 </body>

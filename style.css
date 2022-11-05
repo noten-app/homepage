@@ -32,8 +32,9 @@
 
 :root {
     --background-color: #0f0f0f;
-    --accent-color: #46962b;
+    --accent-color: #282a35;
     --text-color: #ffffff;
+    --nav-hover-color: #383a45;
 }
 
 html,
@@ -43,19 +44,52 @@ body {
 }
 
 nav {
-    display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 10vh;
-    background-color: #46962b;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-family: "Quicksand";
 }
 
-.nav_section {
-    display: inline-flex;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-#nav_right_section {
-    align-self: flex-end;
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+}
+
+li a:hover:not(.active):not(.no_action) {
+    background-color: var(--nav-hover-color);
+}
+
+.active-nav {
+    background-color: var(--nav-hover-color);
+}
+
+.nav_float_right {
+    float: right;
+}
+
+nav>ul>li>a>i {
+    font-size: 100%;
+}
+
+#notenapp-logo {
+    background-image: url("./src/images/logo.png");
+    background-size: contain;
+    width: 10vw;
 }
