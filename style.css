@@ -33,6 +33,7 @@
 :root {
     --background-color: #0f0f0f;
     --accent-color: #46962b;
+    --text-color: #ffffff;
 }
 
 html,
