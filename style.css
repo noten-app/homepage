@@ -30,6 +30,10 @@
     /* Legacy iOS */
 }
 
+* {
+    border: 2px red dotted;
+}
+
 :root {
     --background-color: #0f0f0f;
     --accent-color: #46962b;
@@ -39,4 +43,22 @@ html,
 body {
     background-color: var(--background-color);
     margin: 0;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: #46962b;
+}
+
+.nav_section {
+    display: inline-flex;
+}
+
+#nav_right_section {
+    align-self: flex-end;
 }
