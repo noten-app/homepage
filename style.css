@@ -29,3 +29,14 @@
     url('./src/fonts/quicksand-v30-latin-600.svg#Quicksand') format('svg');
     /* Legacy iOS */
 }
+
+:root {
+    --background-color: #0f0f0f;
+    --accent-color: #46962b;
+}
+
+html,
+body {
+    background-color: var(--background-color);
+    margin: 0;
+}
