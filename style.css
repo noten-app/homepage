@@ -80,10 +80,6 @@ li a:hover:not(.active):not(.no_action) {
     background-color: var(--nav-hover-color);
 }
 
-.active-nav {
-    background-color: var(--nav-hover-color);
-}
-
 .nav_float_right {
     float: right;
 }
