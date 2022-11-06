@@ -45,6 +45,7 @@ html,
 body {
     background-color: var(--background-color);
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -171,6 +172,44 @@ main {
 
 .main_row_image img {
     width: 100%;
+}
+
+#main_end_buttons {
+    width: 100vw;
+    min-height: 20vh;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    margin: 10vh 0 5vh 0;
+    text-align: center;
+    padding: 0 10vw;
+}
+
+.main_end_buttons_title {
+    font-size: 2.5rem;
+    background-image: linear-gradient(90deg, #ff6666, #b88e03);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main_end_button {
+    display: flex;
+    border: 3px solid var(--accent-color);
+    border-radius: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.main_end_button:hover,
+.main_end_button:focus {
+    filter: drop-shadow(0.25rem 0.25rem 0.5rem #444) brightness(2);
+    transform: scale(1.05);
+}
+
+.main_end_button div {
+    padding: 1.5rem;
 }
 
 
