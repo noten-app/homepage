@@ -119,7 +119,7 @@ main {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: min(204px, 10vh);
+    font-size: min(204px, 6rem);
 }
 
 .main_row {
