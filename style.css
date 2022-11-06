@@ -135,11 +135,16 @@ main {
     grid-auto-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "main_row_text main_row_image";
 }
 
 .main_row_text_left {
     grid-template-columns: 2.5fr 2fr;
+    grid-template-areas: "main_row_text main_row_image";
+}
+
+.main_row_text_right {
+    grid-template-columns: 2fr 2.5fr;
+    grid-template-areas: "main_row_image main_row_text";
 }
 
 .main_row_text {
