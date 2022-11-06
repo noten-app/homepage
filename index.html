@@ -90,14 +90,30 @@
     </main>
     <footer>
         <div class="footer_row">
-            <div class="footer_column_left">
+            <div class="footer_column_left footer_column">
                 <div class="footer_column_title footer_column_title_left">Jetzt nutzen</div>
+                <ul>
+                    <li><a href="https://app.noten-app.de">App</a></li>
+                    <li><a href="https://noten-app.de/info">Information</a></li>
+                    <li><a href="https://noten-app.de/hilfe">Hilfe</a></li>
+                </ul>
             </div>
-            <div class="footer_column_center">
+            <div class="footer_column_center footer_column">
                 <div class="footer_column_title footer_column_title_center">Über den Entwickler</div>
+                <ul>
+                    <li><a href="https://cuzimbisonratte.de" target="_blank">Homepage <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="https://link.cuzimbisonratte.de/github" target="_blank">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="mailto:hallo@cuzimbisonratte.de" target="_blank">Mail <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                </ul>
             </div>
-            <div class="footer_column_right">
-                <div class="footer_column_title footer_column_title_right">Mehr Informationen</div>
+            <div class="footer_column_right footer_column">
+                <div class="footer_column_title footer_column_title_right">Kontakt</div>
+                <form id="footer_contactform" action="./script/" method="post">
+                    <input type="email" name="email" placeholder="eMail-Adresse"><br>
+                    <input type="text" name="title" minlength="6" maxlength="16" placeholder="Titel"><br>
+                    <textarea name="request" minlength="16" maxlength="256" placeholder="Anfrage"></textarea><br>
+                    <input type="submit" value="Anfrage absenden">
+                </form>
             </div>
         </div>
         <div class="footer_copyright_notice">

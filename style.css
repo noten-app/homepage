@@ -58,18 +58,18 @@ nav {
     font-family: "Quicksand";
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li {
+nav li {
     float: left;
 }
 
-li a {
+nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -77,7 +77,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active):not(.no_action) {
+nav li a:hover:not(.active):not(.no_action) {
     background-color: var(--nav-hover-color);
 }
 
@@ -253,12 +253,69 @@ footer {
 .footer_column_title {
     text-align: center;
     font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.footer_column,
+.footer_column li {
+    text-align: center;
+    padding: 0;
+}
+
+.footer_column ul {
+    font-family: "Quicksand";
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.25rem;
+    overflow: hidden;
 }
 
 .footer_copyright_notice {
     text-align: center;
+    padding-top: 1.5rem;
 }
 
 #footer_imprint_note a {
     text-decoration: none;
+}
+
+#footer_contactform textarea,
+#footer_contactform input {
+    display: block;
+    width: 80%;
+    height: 1.5rem;
+    margin: auto;
+    border: 0;
+    background-color: var(--accent-color);
+}
+
+#footer_contactform textarea {
+    height: 2rem;
+    border-width: 2px;
+    resize: vertical;
+}
+
+#footer_contactform input {
+    border-bottom: var(--nav-hover-color) 1px solid;
+    border-width: 0 0 2px 0;
+}
+
+#footer_contactform textarea:focus,
+#footer_contactform input:focus {
+    outline: 0;
+    border-style: solid;
+    border-image-source: linear-gradient(90deg, #b88e03, #118a2b);
+    border-image-slice: 1;
+}
+
+#footer_contactform input[type="submit"] {
+    border-radius: 0;
+    height: 2rem;
+    cursor: pointer;
+}
+
+#footer_contactform input[type="submit"]:hover {
+    border-radius: 0.5rem;
+    background-image: linear-gradient(90deg, #118a2b, #3333ff);
 }
