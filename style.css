@@ -106,11 +106,10 @@ main {
 
 #centered_slogan {
     width: 100vw;
-    min-height: 60vh;
+    min-height: 100vh;
     box-sizing: border-box;
     display: grid;
     place-items: center;
-    margin-top: 20vh;
     text-align: center;
     padding: 0 10vw;
 }
@@ -120,7 +119,7 @@ main {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: min(204px, 6rem);
+    font-size: min(204px, 5.5rem);
 }
 
 .main_row {
@@ -130,8 +129,9 @@ main {
     display: grid;
     grid-template-rows: 1fr;
     grid-auto-rows: 1fr;
-    gap: 0px 0px;
+    gap: 0 2rem;
     grid-auto-flow: row;
+    margin-top: 2rem;
 }
 
 .main_row_text_left {
@@ -194,6 +194,7 @@ main {
 }
 
 .main_end_button {
+    margin-top: 1rem;
     display: flex;
     border: 3px solid var(--accent-color);
     border-radius: 1rem;
