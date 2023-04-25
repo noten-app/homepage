@@ -278,7 +278,8 @@ footer {
 }
 
 #footer_imprint_note a {
-    text-decoration: none;
+    margin: 0.25rem 0;
+    display: inline-block;
 }
 
 #footer_contactform textarea,
