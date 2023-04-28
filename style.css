@@ -355,3 +355,31 @@ Small device adjustments
         margin-bottom: 5rem;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .footer_row {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content;
+        grid-auto-rows: 1fr;
+        gap: 3rem;
+        grid-auto-flow: row;
+        grid-template-areas: "footer_column_left footer_column_center" "footer_column_right footer_column_right";
+    }
+    .footer_column_left>ul>li,
+    .footer_column_title_left {
+        text-align: start;
+    }
+    .footer_column_center>ul>li,
+    .footer_column_title_center {
+        text-align: end;
+    }
+    #footer_contactform textarea,
+    #footer_contactform input {
+        width: 100%;
+    }
+    .footer_copyright_notice {
+        margin-top: 3rem;
+    }
+}
