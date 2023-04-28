@@ -1,0 +1,161 @@
+/* Font: Inter */
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/src/fonts/inter-v12-latin-ext_latin-600.eot');
+    src: local(''), url('/src/fonts/inter-v12-latin-ext_latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/src/fonts/inter-v12-latin-ext_latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/src/fonts/inter-v12-latin-ext_latin-600.woff') format('woff'), /* Modern Browsers */
+    url('/src/fonts/inter-v12-latin-ext_latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/src/fonts/inter-v12-latin-ext_latin-600.svg#Inter') format('svg');
+    /* Legacy iOS */
+}
+
+
+/* Font: Quicksand */
+
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/src/fonts/quicksand-v30-latin-600.eot');
+    /* IE9 Compat Modes */
+    src: local(''), url('/src/fonts/quicksand-v30-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/src/fonts/quicksand-v30-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/src/fonts/quicksand-v30-latin-600.woff') format('woff'), /* Modern Browsers */
+    url('/src/fonts/quicksand-v30-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/src/fonts/quicksand-v30-latin-600.svg#Quicksand') format('svg');
+    /* Legacy iOS */
+}
+
+:root {
+    --background-color: #0f0f0f;
+    --accent-color: #282a35;
+    --text-color: #ffffff;
+    --nav-hover-color: #383a45;
+}
+
+* {
+    color: var(--text-color);
+    font-family: Inter;
+}
+
+html,
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-family: "Quicksand";
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active):not(.no_action) {
+    background-color: var(--nav-hover-color);
+}
+
+.nav_float_right {
+    float: right;
+}
+
+nav>ul>li>a>i {
+    font-size: 100%;
+}
+
+#notenapp-logo {
+    background-image: url("/src/images/logo.png");
+    background-size: contain;
+    width: 10vw;
+}
+
+
+/* 
+Main content
+*/
+
+main {
+    font-family: "Inter";
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 3.25rem 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "aside nav" "aside main";
+    height: 100%;
+}
+
+nav {
+    grid-area: nav;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #383a45;
+}
+
+#aside_header {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    place-items: center;
+    height: 3.25rem;
+}
+
+#aside_header i {
+    background-color: #0f0f0f;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    height: fit-content;
+    width: fit-content;
+    display: block;
+}
+
+#aside_header h1 {
+    display: block;
+    padding: 0.5rem;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 0.5rem;
+}
+
+
+/* 
+Main changelogs contents
+*/
+
+main {
+    grid-area: main;
+}
