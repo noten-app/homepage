@@ -105,9 +105,11 @@ main {
 
 html {
     height: 100%;
+    overflow: hidden;
 }
 
 body {
+    overflow: hidden;
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 3.25rem 1fr;
@@ -149,6 +151,26 @@ aside {
     height: fit-content;
     width: fit-content;
     margin-left: 0.5rem;
+}
+
+#aside_versionlist {
+    overflow: auto;
+    height: calc(100% - 5rem);
+}
+
+.aside_versionlist-version {
+    width: 80%;
+    background-color: #0f0f0f;
+    margin: 1rem calc(10% - 1rem);
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.active-version {
+    background-color: #bbfa;
+    color: #000;
+    cursor: inherit;
 }
 
 
