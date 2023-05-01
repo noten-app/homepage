@@ -20,3 +20,69 @@ body {
     margin: 0;
     font-family: Inter;
 }
+
+
+/* 
+Left-Right-Divider
+*/
+
+.lr-divider {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5rem;
+    grid-auto-flow: row;
+    grid-template-areas: "lr-divider_l lr-divider_r";
+}
+
+.lr-divider_l {
+    grid-area: lr-divider_l;
+}
+
+.lr-divider_r {
+    grid-area: lr-divider_r;
+}
+
+.lr-divider_r>* {
+    float: right;
+    text-align: end;
+}
+
+
+/* 
+Padding container
+*/
+
+.padding-container {
+    padding: 2.5rem;
+}
+
+
+/* 
+Changelog layout styling
+*/
+
+.change-title {
+    font-size: 2.5rem;
+}
+
+.change-log {
+    font-size: 1rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+
+/* 
+Spacer
+*/
+
+.spacer {
+    height: 1rem;
+}
+
+.spacer-small {
+    height: 2.5rem;
+}
