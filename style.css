@@ -93,9 +93,10 @@ nav>ul>li>a>i {
 }
 
 #notenapp-logo {
-    background-image: url("./src/images/logo.png");
+    background-image: url("/src/images/logo-108p.webp");
     background-size: contain;
-    width: 10vw;
+    width: 3.25rem;
+    aspect-ratio: 1/1;
 }
 
 
