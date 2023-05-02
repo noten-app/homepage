@@ -71,7 +71,8 @@ nav li {
     float: left;
 }
 
-nav li a {
+nav li a,
+nav li span {
     display: block;
     color: white;
     text-align: center;
