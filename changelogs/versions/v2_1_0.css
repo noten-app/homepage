@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(6, 8, 23);
+    color: #ffffff;
+}
+
+#version-title {
+    height: 30vh;
+    background-color: #1763ff;
+    display: grid;
+    place-items: center;
+    font-size: 7.5vmin;
+    color: #ffffff;
+}
