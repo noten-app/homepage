@@ -70,15 +70,18 @@ nav li {
     float: left;
 }
 
-nav li a {
+nav li a,
+nav li span {
     display: block;
     color: white;
     text-align: center;
     padding: 1rem 1rem;
     text-decoration: none;
+    cursor: pointer;
 }
 
-nav li a:hover:not(.active):not(.no_action) {
+nav li a:hover:not(.active):not(.no_action),
+nav li span:hover:not(.active):not(.no_action) {
     background-color: var(--nav-hover-color);
 }
 
@@ -86,7 +89,8 @@ nav li a:hover:not(.active):not(.no_action) {
     float: right;
 }
 
-nav>ul>li>a>i {
+nav>ul>li>a>i,
+nav>ul>li>span>i {
     font-size: 100%;
 }
 
@@ -187,4 +191,60 @@ Main changelogs contents
 
 main {
     grid-area: main;
+}
+
+
+/*
+Mobile
+*/
+
+#mobile_menu-opener {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 650px) {
+    body {
+        grid-template-columns: 100px 1fr;
+    }
+    #aside_header h1 {
+        display: none;
+    }
+    .aside_versionlist-version {
+        width: fit-content;
+        margin: 1rem calc(25% - 1rem);
+        padding: 1rem;
+    }
+    #aside_header {
+        display: grid;
+        place-items: center;
+        height: 3.25rem;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3.25rem 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "nav" "main";
+    }
+    aside {
+        z-index: -500;
+        display: fixed;
+        position: absolute;
+        inset: 0;
+    }
+    #mobile_menu-opener {
+        display: block;
+    }
+    .lr-divider {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2.5rem;
+        grid-template-areas: "lr-divider_l" "lr-divider_r";
+    }
 }
