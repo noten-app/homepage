@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(0, 8, 6);
+    color: #ffffff;
+}
+
+#version-title {
+    height: 30vh;
+    background-color: #008866;
+    display: grid;
+    place-items: center;
+    font-size: 7.5vmin;
+}

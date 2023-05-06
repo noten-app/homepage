@@ -11,6 +11,7 @@
     url('./src/fonts/inter-v12-latin-ext_latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
     url('./src/fonts/inter-v12-latin-ext_latin-600.svg#Inter') format('svg');
     /* Legacy iOS */
+    font-display: swap;
 }
 
 
@@ -28,6 +29,7 @@
     url('./src/fonts/quicksand-v30-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
     url('./src/fonts/quicksand-v30-latin-600.svg#Quicksand') format('svg');
     /* Legacy iOS */
+    font-display: swap;
 }
 
 :root {
@@ -52,7 +54,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     background-color: var(--accent-color);
     color: var(--text-color);
     font-family: "Quicksand";
@@ -69,7 +71,8 @@ nav li {
     float: left;
 }
 
-nav li a {
+nav li a,
+nav li span {
     display: block;
     color: white;
     text-align: center;
@@ -90,9 +93,10 @@ nav>ul>li>a>i {
 }
 
 #notenapp-logo {
-    background-image: url("./src/images/logo.png");
+    background-image: url("/src/images/logo-108p.webp");
     background-size: contain;
-    width: 10vw;
+    width: 3.25rem;
+    aspect-ratio: 1/1;
 }
 
 
@@ -105,7 +109,7 @@ main {
 }
 
 #centered_slogan {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
     display: grid;
@@ -123,7 +127,7 @@ main {
 }
 
 .main_row {
-    width: calc(100vw - calc(min(100px, 10vw) * 2));
+    /* width: 80vw; */
     min-height: 20vh;
     padding: 0 min(100px, 10vw);
     display: grid;
@@ -175,7 +179,7 @@ main {
 }
 
 #main_end_buttons {
-    width: 100vw;
+    width: 100%;
     min-height: 20vh;
     box-sizing: border-box;
     display: grid;
@@ -224,7 +228,7 @@ Footer content
 */
 
 footer {
-    width: 100vw;
+    width: 100%;
     background-color: var(--accent-color);
     padding-top: min(4vh, 40px);
     font-family: "Quicksand";
