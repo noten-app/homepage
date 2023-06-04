@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /legal
+Disallow: /changelogs/versions
+Disallow: /src
+
+Sitemap: https://noten-app.de/sitemap.xml

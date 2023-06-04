@@ -17,8 +17,10 @@
     <meta name="google" content="nositelinkssearchbox">
     <meta name="googlebot" content="notranslate">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./src/images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/src/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/src/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/src/fontawesome/css/solid.min.css">
 </head>
 
 <body>
@@ -28,13 +30,13 @@
                 <div id="notenapp-logo"></div>
             </li>
             <li class="nav_float_left">
-                <a class="no_action">Noten-App</a>
+                <span>Noten-App</span>
             </li>
             <li class="nav_float_right">
-                <a href="#main_end_buttons"><i class="fa-solid fa-download"></i></a>
+                <a href="#main_end_buttons" aria-label="Jump to download section"><i class="fa-solid fa-download" alt="Download button"></i></a>
             </li>
             <li class="nav_float_right">
-                <a href="./info/">Info</a>
+                <a href="./info/" aria-label="More Information">Info</a>
             </li>
             <li class="nav_float_right">
                 <a href="./hilfe/">Hilfe</a>
@@ -58,9 +60,10 @@
                 </div>
             </div>
             <div class="main_row_image">
-                <img src="/src/images/prodcutImages/classViewIpadAirBlue.png" alt="" srcset="">
+                <img src="/src/images/prodcutImages/classViewIpadAirBlue.webp" alt="Image of a blue iPad showing the NotenApp with the open Classlist." srcset="/src/images/prodcutImages/classViewIpadAirBlue.webp 2660w, /src/images/prodcutImages/classViewIpadAirBlue-75.webp 1995w, /src/images/prodcutImages/classViewIpadAirBlue-50.webp 1330w, /src/images/prodcutImages/classViewIpadAirBlue-25.webp 665w">
             </div>
         </div>
+        <div id="mobile_display_divider"></div>
         <div class="main_row_text_right main_row">
             <div class="main_row_text">
                 <div>
@@ -75,7 +78,7 @@
                 </div>
             </div>
             <div class="main_row_image">
-                <img src="/src/images/prodcutImages/multiView.png" alt="" srcset="">
+                <img src="/src/images/prodcutImages/multiView.webp" alt="Two iPads and one iPhone all with the NotenApp opened." srcset="/src/images/prodcutImages/multiView.webp 4360w, /src/images/prodcutImages/multiView-75.webp 3270w, /src/images/prodcutImages/multiView-50.webp 2180w, /src/images/prodcutImages/multiView-25.webp 1090w">
             </div>
         </div>
         <div id="main_end_buttons" data-nosnippet>
@@ -94,7 +97,7 @@
                 <div class="footer_column_title footer_column_title_left">Jetzt nutzen</div>
                 <ul>
                     <li><a href="https://app.noten-app.de">App</a></li>
-                    <li><a href="./info/">Information</a></li>
+                    <li><a href="./info/" aria-label="More Information">Information</a></li>
                     <li><a href="./hilfe/">Hilfe</a></li>
                 </ul>
             </div>
@@ -123,7 +126,7 @@
                 <a href="/legal/impressum/" target="_blank">Impressum</a>
                 <a href="/legal/agb/" target="_blank">Gesch&auml;ftsbedingungen</a>
             </span><br><br>
-            <span style="color:#ffffff66">Apple, iPad, App Store und iPadOS sind Marken der Apple Inc.</span>
+            <span style="color:#ffffffb8">Apple, iPad, App Store und iPadOS sind Marken der Apple Inc.</span>
         </div>
     </footer>
     <script src="script.js"></script>
