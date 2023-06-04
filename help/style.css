@@ -223,8 +223,27 @@ Question
     background-image: linear-gradient(45deg, #3333ff, #ff6666);
 }
 
+.qa-answer p:first-child {
+    margin-top: 0;
+}
+
+.qa-answer p:last-child {
+    margin-bottom: 0;
+}
+
 .qa * {
     color: #0f0f0f;
+}
+
+.qa a {
+    background-image: linear-gradient(45deg, #3333ff, #ff6666);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.qa i {
+    color: #888;
 }
 
 /* 
